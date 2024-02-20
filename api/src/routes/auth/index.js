@@ -5,7 +5,7 @@ const router = express.Router()
 const authController = require("../../controllers/auth.controller")
 const { asyncHandler } = require("../../helper/asyncHandler")
 
-route.post('/register', asyncHandler(authController.register))
-route.post('/signin', asyncHandler(authController.signin))
+router.post('/register', asyncHandler(authController.register))
+router.post('/signin', asyncHandler(authController.signin))
 
 module.exports = router
