@@ -1,4 +1,6 @@
 'use strict' 
+const User = require("../models/User.model")
+const bcrypt = require("bcrypt")
 
 class AuthController {
     register = async(req, res, next) => {
